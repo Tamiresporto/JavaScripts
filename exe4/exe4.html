@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasil</title>
 </head>
+
 <body background="">
-        <h1>where you live?</h1>
-         <input type="name" name="txtvel" id="txtvel">
-        <input type="button" value="Verificar" onclick="calcular()">
-        <div id="res">
-    
-        </div>
+    <h1>where you live?</h1>                                                                 
+    <form id="txtvel">
+        <label>Test field: <input type="txtvel" /></label>
+        <br /><br />
+        <input value="verificar" button type="submit" onclick="consultar">Submit form</button>
+    </form>
+    <p id="log"></p>
+
+    </div>
 
     <script>
-            var país ='Brasil'
-            var txtv = window.document.getElementById('input#txtvel')
-            var res = window.document.getElementById('div#res')
-    console.log(`Vivendo em ${país}`)
+        
+        function consultar() {
+            var txtv = window.document.getElementById('inpu#txtvel')
+        var país = 'Brasil'
+
+        console.log(`Vivendo em ${país}`)
         if (país != 'Brasil') {
             console.log('Você é Estrangeiro!')
         } else {
             console.log('Você é Brasileiro')
         }
+    }
+
+
     </script>
 </body>
+
 </html>
